@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signin</title>
+        
+    </head>
+    <body>  
+        <h1>Register</h1>
+        <form action="backend.py">
+            <div>
+                Name: <input type="text" name="myname">
+            </div>
+            <br>
+        <div>
+            Email: <input type="email" name="mymailaddress">
+        </div>
+        <br>
+        <div>
+            Password: <input type="number" name="mypassword">
+        </div>
+        <br>
+        <div> 
+            Birth Date: <input type="date" name="birthdate">
+        </div>
+        <br>
+        <label for="18+">18+</label>
+        <div> 
+            <input type="checkbox" name="check" id="18+">
+        </div>
+        <br>
+        <div> 
+            Gender: 
+            <br>
+            Male<input type="radio" name="check">
+            <br>
+            Female<input type="radio" name="check">
+            <br>
+            Other<input type="radio" name="check">
+        </div>
+        <br>
+        <div> 
+            Why you want to join us ?:<br><textarea name="mytest" cols="30" rows='10'></textarea>
+        </div>
+        <br>
+        <label for="city">City</label>
+        <select name="City" id="city">
+            <option value="Not Applicable">Not Applicable</option>
+            <option value="Nandurbar">Nandurbar</option>
+            <option value="Dhule">Dhule</option>
+            <option value="Jalgoan">Jalgoan</option>
+        </select>
+        <div> 
+            <br>    
+            <input type="submit" value="Sign up">
+            <input type="reset" value="Clear">
+        </div>
+        <br>
+        
+        
+    </form>
+</body>
+</html> 
