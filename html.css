@@ -1,0 +1,47 @@
+body{
+    background-color: #02203c;
+    opacity: 0.8;
+    /* background-image: url(s.jpg); */
+    /* background-size: 300px 300px; */
+    /* background-attachment: scroll; */
+}
+
+.navigation{
+    color: gold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    list-style: none;
+    margin-right : 20px;
+    float: left;
+    padding: 5px 5px 5px 15px; 
+    border-left: 3px solid lavenderblush;
+    border-collapse: collapse;
+     /* border: 3px outset rgb(102, 205, 231);
+    border-radius: 15px; */
+
+}
+.navigation:hover{
+    color: greenyellow;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color: aqua;
+    text-align: center;
+    margin-top: 100px;
+    /* height: 40px;
+    width: 4040px; */
+    font-size: 80px;
+    font-family:cursive, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul{
+    border: 3px solid lavender;
+    height: 65px;
+    /* background-color: slategray; */
+    border-radius: 0px 50px;
+}
+pre{
+    font-size: 30px;
+    color: greenyellow;
+}

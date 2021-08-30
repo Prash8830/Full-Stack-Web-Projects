@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <style>
+        form {
+            text-align: left;
+            font-size: 30px;
+        }
+
+        .name {
+            border: 80px solid blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="backend.py" target="blank">
+        <label for="Name">Name</label>
+        <input type="text" name="Name" class="Name" size="10"><br>
+        <label for="Marks">12<sup>th</sup> Marks</label>
+        <input type="number" min="0" max="100"><br>
+        <label for="cgpa" >Degree Cgpa</label>
+        <input type="number" min="0" max="10">
+        <label for="file">Select Your Resume</label>
+        <input type="file" name="file" id="myfile" multiple><br>
+        <input type="submit" name="sub" id="sub"><br>
+        <label for="se">Google</label>
+        <input type="search" name="se" id="se" value="Prashant Projact" readonly>
+    </form>
+</body>
+
+</html>
