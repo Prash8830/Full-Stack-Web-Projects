@@ -1,1 +1,0 @@
-<h1 style='color: gold; text-align: center; font-family: cursive;background-color: none;font-size: 30px;'></h1>

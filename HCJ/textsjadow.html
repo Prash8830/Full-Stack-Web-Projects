@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced css</title>
+    <style>
+        h1 {
+            color: rgba(255, 0, 0, 0.815);
+            text-shadow: 1px -1px 3px rgba(255, 166, 0, 0.815), 2px -2px 5px rgba(255, 238, 0, 0.863);
+        }
+
+        p {
+            text-shadow: 2px 2px 4px #000000;
+            color: white;
+        }
+
+        p {
+            color: yellow;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        h3 ,img{
+            border: 2px solid black;
+            width: 250px;
+            word-break: keep-all;
+            margin-left: 80px;
+            padding: 20px;
+            border-radius: 20px;
+            color: black;
+            background-color: aqua;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 5px 5px;
+            animation-name: rotate;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+        }
+
+        img {
+            margin-left: 50px;
+            animation-name: move;
+            animation-duration: 4s;
+        }
+        @keyframes move{
+            from { transform:translate(0px , 0px);}
+            to{transform: matrix(0.8, 0, -0.4, 0.8, 0, 0);}
+        }
+        @keyframes rotate {
+            from{transform: rotate(0deg);}
+            to{transform: rotateY(-180deg);}
+        }
+        h3:hover,
+        img:hover {
+
+           
+            /*transform: scale3d(1, 1, 4000000000);*/
+            /*transform: translate3d(0px, 0px, 200px);*/
+            transform: rotateY(-180deg);
+            transform: scale(1.2,1.2);
+            transform: translate(500px , 0px);
+            transform: skew(20deg);
+            transform: matrix(0.8, 0, -0.4, 0.8, 0, 0);
+            transition: 5s;/*
+            
+            /*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+            /*transform: matrix(1, -0.3, 0, 1, 0, 0);*/
+            /*matrix(n,n,n,n,n,n)	Defines a 2D transformation, using a matrix of six values
+            translate(x,y)	Defines a 2D translation, moving the element along the X- and the Y-axis
+                translateX(n)	Defines a 2D translation, moving the element along the X-axis
+            translateY(n)	Defines a 2D translation, moving the element along the Y-axis
+            s       cale(x,y)	Defines a 2D scale transformation, changing the elements width and height
+            scaleX(n)	Defines a 2D scale transformation, changing the element's width
+                scaleY(n)	Defines a 2D scale transformation, changing the element's height
+                rotate(angle)	Defines a 2D rotation, the angle is specified in the parameter
+            skew(x-angle,y-angle)	Defines a 2D skew transformation along the X- and the Y-axis
+            skewX(angle)	Defines a 2D skew transformation along the X-axis
+                    skewY(angle)	Defines a 2D skew transformation along the Y-axis*/}
+    </style>
+</head>
+
+<body>
+    <h1>high performance means</h1>
+    <img src="git.png" alt="mm" height="280px" width="280px">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus molestiae cumque laborum! Natus,
+        officia dolor rerum, omnis nulla repudiandae necessitatibus accusamus rem veniam enim non eligendi id aperiam
+        facere.</p>
+    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis veniam obcaecati dolor optio ut quae sed cum
+        qui, nam unde amet cupiditate quasi aut. Voluptatem adipisci animi neque voluptate consequatur.</h3>
+</body>
+
+</html>
