@@ -3,57 +3,60 @@ import React, { useState } from 'react'
 export default function Form(props) {
 
     const handleUpclick = () => {
-        console.log('Uppercase was clicked'+ text);
-        let newtext=text.toUpperCase();
+        // console.log('Uppercase was clicked'+ text);
+        let newtext = text.toUpperCase();
+        setText(newtext);
+    }
+    const handleLoclick = () => {
+        // console.log('Uppercase was clicked'+ text);
+        let newtext = text.toLowerCase();
+        setText(newtext);
+    }
+    const handleClclick = () => {
+        // console.log('Uppercase was clicked'+ text);
+        let newtext = "";
+        setText(newtext);
+    }
+    const handleReclick = () => {
+        // console.log('Uppercase was clicked'+ text);
+        let newtext = text.replace(/ /g, "");
         setText(newtext);
     }
     const handleOnChange = (event) => {
-        console.log('On change');
+        // console.log('On change');
         setText(event.target.value);
     }
+    function getvowelcount(data) {
+        var testStr = data.split(' ');
+        var vowelRegex = '^[aieouAIEOU].*';
+        let count = 0;
+        for(let i = 0; i < testStr.length; i++) {
+            var matched = testStr[i].match(vowelRegex);
+            if(matched) {count++;}
+        }
+        return count;
+    }
 
-    const [text, setText] = useState('IronMan');
+    const [text, setText] = useState('your text goes here');
     // setText("Prashant");
     return (
         <>
-            <h1 >Hi, welcome {props.name} - {text} !</h1>
-            <div className="input-group mb-3">
-                <span className="input-group-text" id="basic-addon1">@</span>
-                <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+            <h1 id="txtx">Text Investigator For Everyone</h1>
+            <div class="container" id="txtx">
+                <label for="comment">Enter Text :</label>
+                <textarea class="form-control" rows="5" id="comment" value={text} onChange={handleOnChange} placeholder={text}></textarea>
             </div>
-
-            <div className="input-group mb-3">
-                <input type="text" className="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-                <span className="input-group-text" id="basic-addon2">@example.com</span>
+            <button className="btn btn-primary" id="txtxg" onClick={handleUpclick}>To Upper Case</button>
+            <button className="btn btn-primary" id="txtxg" onClick={handleLoclick}>To Lower Case</button>
+            <button className="btn btn-primary" id="txtxg" onClick={handleClclick}>Clear</button>
+            <button className="btn btn-primary" id="txtxg" onClick={handleReclick}>Remove Space</button>
+            <div id="txtx">
+                <h1>Text Analysis :</h1>
+                <p>1) No. of Words : {text.split(" ").length}</p>
+                <p>2) No. of Characters : {text.length}</p>
+                <p>3) Minutes Required To Read: {0.008 * text.split(" ").length}</p>
+                <p>4) No. of Words starting with Vowel: {getvowelcount(text)}</p>
             </div>
-
-            <label htmlFor="basic-url" className="form-label">WebUrl</label>
-            <div className="input-group mb-3">
-                <span className="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                <input type="text" className="form-control" id="basic-url" aria-describedby="basic-addon3" />
-            </div>
-
-            <div className="input-group mb-3">
-                <span className="input-group-text">$</span>
-                <input type="text" className="form-control" aria-label="Amount (to the nearest dollar)" />
-                <span className="input-group-text">.00</span>
-            </div>
-
-            <div className="input-group mb-3">
-                <input type="text" className="form-control" placeholder="Username" aria-label="Username" />
-                <span className="input-group-text">@</span>
-                <input type="text" className="form-control" placeholder="Server" aria-label="Server" />
-            </div>
-
-            <div className="input-group">
-                <span className="input-group-text">With textarea</span>
-                <textarea className="form-control" onChange={handleOnChange}  placeholder={text} aria-label="With textarea" value={text}></textarea>
-            </div>
-            <br />
-            <button className="btn btn-primary" onClick={handleUpclick}>ToUpper</button>
-            <br />
-            <label htmlFor="exampleColorInput" className="form-label">Color picker</label>
-            <input type="color" className="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color"></input>
         </>
     )
 }
