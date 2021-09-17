@@ -25,12 +25,20 @@ function App() {
         document.body.style.backgroundColor='#073642';
         // document.body.style.color='#lightgreen';
         showAlert("Dark Mode is enabled","Success !");
+        document.title="Text Investigator.Dark Mode";
+        // setInterval(()=>{
+        //  document.title="Nice";
+        // },1500);
+        // setInterval(()=>{
+        //  document.title="Awesome";
+        // },2000);
     }
     else{
         setmode("light");
         document.body.style.backgroundColor='white';
         // document.body.style.Color='black';
         showAlert("Light Mode is enabled","Success !");
+        document.title="Text Investigator.Light Mode";
 
     }
 }
