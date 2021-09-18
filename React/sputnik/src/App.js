@@ -3,16 +3,16 @@ import './App.css';
 import React, { useState } from 'react'
 
 import Navbar from './components/Navbar'
-import About from './components/About'
+// import About from './components/About'
 import Form from './components/Form'
-import Alert from './components/Alert'
+// import Alert from './components/Alert'
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 
 function App() {
@@ -52,19 +52,12 @@ function App() {
   }
   return (
     <>
-      <Router>
+
       <Navbar title="Home" mode={mode} togglemode={togglemode} />
-      <Alert alert={alert} />
-      <Switch>
-        <Route exact path="/about">
-          <About />
-        </Route>
-        <Route exact path="/">
-          <Form mode={mode} showAlert={showAlert} />
-        </Route>
-      </Switch>
-      {/* <About/> */}
-    </Router>
+
+
+      <Form mode={mode} showAlert={showAlert} />
+
     </>
   );
 }

@@ -47,7 +47,7 @@ export default function Form(props) {
         let count= 0;
         let ar = text.split(" ");
         for (let i=0; i<ar.length; i++) {
-            if(ar[i]!="")
+            if(ar[i]!=="")
             {
                 count++;
             }
