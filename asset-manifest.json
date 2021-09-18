@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/sputnik/static/css/main.d3112c2e.chunk.css",
-    "main.js": "/sputnik/static/js/main.1f8e5772.chunk.js",
-    "main.js.map": "/sputnik/static/js/main.1f8e5772.chunk.js.map",
-    "runtime-main.js": "/sputnik/static/js/runtime-main.6db5ecfa.js",
-    "runtime-main.js.map": "/sputnik/static/js/runtime-main.6db5ecfa.js.map",
-    "static/js/2.d0edd51f.chunk.js": "/sputnik/static/js/2.d0edd51f.chunk.js",
-    "static/js/2.d0edd51f.chunk.js.map": "/sputnik/static/js/2.d0edd51f.chunk.js.map",
-    "static/js/3.db84e561.chunk.js": "/sputnik/static/js/3.db84e561.chunk.js",
-    "static/js/3.db84e561.chunk.js.map": "/sputnik/static/js/3.db84e561.chunk.js.map",
-    "index.html": "/sputnik/index.html",
-    "static/css/main.d3112c2e.chunk.css.map": "/sputnik/static/css/main.d3112c2e.chunk.css.map",
-    "static/js/2.d0edd51f.chunk.js.LICENSE.txt": "/sputnik/static/js/2.d0edd51f.chunk.js.LICENSE.txt"
+    "main.css": "/Full-Stack-Web-Projects/tree/master/React/sputnik/static/css/main.d3112c2e.chunk.css",
+    "main.js": "/Full-Stack-Web-Projects/tree/master/React/sputnik/static/js/main.1f8e5772.chunk.js",
+    "main.js.map": "/Full-Stack-Web-Projects/tree/master/React/sputnik/static/js/main.1f8e5772.chunk.js.map",
+    "runtime-main.js": "/Full-Stack-Web-Projects/tree/master/React/sputnik/static/js/runtime-main.eea447b6.js",
+    "runtime-main.js.map": "/Full-Stack-Web-Projects/tree/master/React/sputnik/static/js/runtime-main.eea447b6.js.map",
+    "static/js/2.d0edd51f.chunk.js": "/Full-Stack-Web-Projects/tree/master/React/sputnik/static/js/2.d0edd51f.chunk.js",
+    "static/js/2.d0edd51f.chunk.js.map": "/Full-Stack-Web-Projects/tree/master/React/sputnik/static/js/2.d0edd51f.chunk.js.map",
+    "static/js/3.db84e561.chunk.js": "/Full-Stack-Web-Projects/tree/master/React/sputnik/static/js/3.db84e561.chunk.js",
+    "static/js/3.db84e561.chunk.js.map": "/Full-Stack-Web-Projects/tree/master/React/sputnik/static/js/3.db84e561.chunk.js.map",
+    "index.html": "/Full-Stack-Web-Projects/tree/master/React/sputnik/index.html",
+    "static/css/main.d3112c2e.chunk.css.map": "/Full-Stack-Web-Projects/tree/master/React/sputnik/static/css/main.d3112c2e.chunk.css.map",
+    "static/js/2.d0edd51f.chunk.js.LICENSE.txt": "/Full-Stack-Web-Projects/tree/master/React/sputnik/static/js/2.d0edd51f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6db5ecfa.js",
+    "static/js/runtime-main.eea447b6.js",
     "static/js/2.d0edd51f.chunk.js",
     "static/css/main.d3112c2e.chunk.css",
     "static/js/main.1f8e5772.chunk.js"
