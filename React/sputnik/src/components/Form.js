@@ -6,27 +6,27 @@ export default function Form(props) {
         // console.log('Uppercase was clicked'+ text);
         let newtext = text.toUpperCase();
         setText(newtext);
-        props.showAlert("Converted to uppercase","Success!");
+        // props.showAlert("Converted to uppercase","Success!");
     }
     const handleLoclick = () => {
         // console.log('lowercase was clicked'+ text);
         let newtext = text.toLowerCase();
         setText(newtext);
-        props.showAlert("Converted to lowercase","Success!");
+        // props.showAlert("Converted to lowercase","Success!");
 
     }
     const handleClclick = () => {
         // console.log('clear was clicked'+ text);
         let newtext = "";
         setText(newtext);
-        props.showAlert("Text is clear","Warning!");
+        // props.showAlert("Text is clear","Warning!");
 
     }
     const handleReclick = () => {
         // console.log('Uppercase was clicked'+ text);
         let newtext = text.replace(/[ ]+/g, " ");
         setText(newtext);
-        props.showAlert("Spaces are removed","Success!");
+        // props.showAlert("Spaces are removed","Success!");
 
     }
     const handleOnChange = (event) => {
