@@ -29,6 +29,10 @@ export default function Form(props) {
         // props.showAlert("Spaces are removed","Success!");
 
     }
+    const handleCopy = () => {
+        navigator.clipboard.writeText(text); 
+        // props.showAlert("Copied to Clipboard!", "success");
+    }
     const handleOnChange = (event) => {
         // console.log('On change');
         setText(event.target.value);
@@ -65,10 +69,11 @@ export default function Form(props) {
                 <label htmlFor="comment" style={{color: props.mode === 'dark'?'lightgreen':'#212529'}}>Enter Text :</label>
                 <textarea  className="form-control" style={{backgroundColor: props.mode === 'dark'?'#073642':'white',color: props.mode === 'dark'?'red':'#212529'}} rows="5" id="comment" value={text} onChange={handleOnChange} placeholder={text}></textarea>
             </div>
-            <button className="btn btn-primary" id="txtxg" onClick={handleUpclick}>To Upper Case</button>
-            <button className="btn btn-primary" id="txtxg" onClick={handleLoclick}>To Lower Case</button>
-            <button className="btn btn-primary" id="txtxg" onClick={handleClclick}>Clear</button>
-            <button className="btn btn-primary" id="txtxg" onClick={handleReclick}>Remove Space</button>
+            <button disabled={text.length===0} className="btn btn-primary" id="txtxg" onClick={handleUpclick}>To Upper Case</button>
+            <button disabled={text.length===0} className="btn btn-primary" id="txtxg" onClick={handleLoclick}>To Lower Case</button>
+            <button disabled={text.length===0} className="btn btn-primary" id="txtxg" onClick={handleCopy}>Copy</button>
+            <button disabled={text.length===0} className="btn btn-primary" id="txtxg" onClick={handleClclick}>Clear</button>
+            <button disabled={text.length===0} className="btn btn-primary" id="txtxg" onClick={handleReclick}>Remove Space</button>
             <div id="txtx">
                 <h1 style={{color: props.mode === 'dark'?'lightgreen':'#212529'}}>Text Analysis :</h1>
                 <p style={{color: props.mode === 'dark'?'lightgreen':'#212529'}}>1) No. of Words : {countwords(text)}</p>
@@ -76,6 +81,6 @@ export default function Form(props) {
                 <p style={{color: props.mode === 'dark'?'lightgreen':'#212529'}}>3) Time Required To Read to human: {text.length===0?0:0.008 * countwords(text)} minutes</p>
                 <p style={{color: props.mode === 'dark'?'lightgreen':'#212529'}}>4) No. of Words starting with Vowel: {getvowelcount(text)}</p>
             </div>
-        </>
+        </> 
     )
 }
